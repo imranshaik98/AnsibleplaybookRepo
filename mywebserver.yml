@@ -12,5 +12,5 @@
     apt:
       name: "{{javainstallonubuntu}}"
       state: present 
-    when: ansible_os_family=="Debain" 
+    when: ansible_os_family=="Debian" 
     
