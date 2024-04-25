@@ -10,7 +10,7 @@
 
   - name: i want install java on ubuntu
     apt:
-      name: {{javainstallonubuntu}}
+      name: "{{javainstallonubuntu}}"
       state: present 
     when: ansible_os_family=="Debain" 
     
