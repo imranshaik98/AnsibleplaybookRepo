@@ -1,8 +1,16 @@
 ---
-- hosts: all
+- hosts: mywebserver
   become: yes
   tasks: 
   - name: i want to install webserver
     apt:
       name: apache2
       state: present
+    when: ansible_os_family=="Debian"
+
+  - name: i want install java on ubuntu
+    apt:
+      name: {{javainstallonubuntu}}
+      state: present 
+    when: ansible_os_family=="Debain" 
+    

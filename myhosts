@@ -1,0 +1,13 @@
+[mywebserver]
+172.31.10.146
+
+[myDBservers]
+172.31.45.456
+
+[myappserver]
+192.168.12.123
+
+[myubuntuserver]
+172.31.10.146
+
+
