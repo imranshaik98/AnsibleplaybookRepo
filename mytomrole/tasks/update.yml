@@ -1,0 +1,5 @@
+---
+- name: i want to update command to run in server
+    apt:
+     name: update
+     state: present

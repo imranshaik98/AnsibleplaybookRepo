@@ -1,0 +1,6 @@
+---
+- name: i want to give permissions
+   command: sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: i want to give permission to bin
+   command: sudo chmod -R u+x /opt/tomcat/bin

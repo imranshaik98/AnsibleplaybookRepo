@@ -13,4 +13,10 @@
       name: "{{javainstallonubuntu}}"
       state: present 
     when: ansible_os_family=="Debian" 
+
+  - name: copy index file into node server
+    copy:
+      src: myindexfile
+      dest: /var/www/html/index.html
+
     
