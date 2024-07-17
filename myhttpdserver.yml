@@ -1,6 +1,9 @@
 ---
 - hosts: all
   become: yes
+  vars:
+   HubandName: Imran Shaik
+   WifeName: Afrin Shaik
   tasks:
    - name: install httpd server
      yum:
